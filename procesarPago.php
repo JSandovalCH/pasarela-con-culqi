@@ -5,8 +5,8 @@ Requests::register_autoloader();
 include_once dirname(__FILE__).'/culqi-php/lib/culqi.php';
 
 // Configurar tu API Key y autenticación
-$PUBLIC_KEY = "{PUBLIC KEY}";
-$SECRET_KEY = "{SECRET KEY}";
+$PUBLIC_KEY = "{pk_test_XBWsfPU0w7KmcLF9}";
+$SECRET_KEY = "{sk_test_IDNqehAAX2dMtK1P}";
 $culqi = new Culqi\Culqi(array('api_key' => $SECRET_KEY));
 
 $charge = $culqi->Charges->create(

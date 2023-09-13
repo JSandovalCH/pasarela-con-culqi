@@ -23,7 +23,7 @@
   </div>
 </div>
     <script>
-    Culqi.publicKey = 'pk_test_07e2b9f728f921sd';
+    Culqi.publicKey = 'pk_test_XBWsfPU0w7KmcLF9';
 
     
 
