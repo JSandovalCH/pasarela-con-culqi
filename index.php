@@ -40,7 +40,7 @@
       }
   });*/
 
-  const btn_pagar = document.getElementById('btn_pagar');
+  var btn_pagar = document.getElementById('btn_pagar');
 
   btn_pagar.addEventListener('click', function (e) {
       // Abre el formulario con la configuración en Culqi.settings y CulqiOptions
@@ -58,7 +58,7 @@
     paymentMethods: {
       tarjeta: true,
       yape: true,
-      bancaMovil: false,
+      bancaMovil: true,
       agente: true,
       billetera: true,
       cuotealo: true,
@@ -71,8 +71,8 @@
 
   function culqi() {
     if (Culqi.token) {  // ¡Objeto Token creado exitosamente!
-      const token = Culqi.token.id;
-      const token = Culqi.token.email;
+      var token = Culqi.token.id;
+      var token = Culqi.token.email;
       console.log('Se ha creado un Token: ', token);
       //En esta linea de codigo debemos enviar el "Culqi.token.id"
       //hacia tu servidor con Ajax
